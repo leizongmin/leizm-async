@@ -1,0 +1,30 @@
+{
+  "name": "lei-async",
+  "version": "1.0.0",
+  "description": "基于 async function 的异步库",
+  "main": "out/index.js",
+  "typings": "out/index.d.ts",
+  "files": [
+    "out"
+  ],
+  "scripts": {
+    "test": "mocha --harmony-async-await --timeout 5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leizongmin/lei-async.git"
+  },
+  "keywords": [
+    "async"
+  ],
+  "author": "Zongmin Lei <leizongmin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leizongmin/lei-async/issues"
+  },
+  "homepage": "https://github.com/leizongmin/lei-async#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
