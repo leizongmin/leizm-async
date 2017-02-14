@@ -26,6 +26,7 @@
   "homepage": "https://github.com/leizongmin/lei-async#readme",
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "typescript": "^2.1.6"
   }
 }
