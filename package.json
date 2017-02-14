@@ -8,7 +8,8 @@
     "out"
   ],
   "scripts": {
-    "test": "mocha --harmony-async-await --timeout 5000"
+    "test": "mocha --harmony-async-await --timeout 5000",
+    "prepublish": "rm -rf out && tsc -p ."
   },
   "repository": {
     "type": "git",
