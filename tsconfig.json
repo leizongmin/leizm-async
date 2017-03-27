@@ -1,10 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es2017",
     "module": "commonjs",
-    "rootDir": "./src",
-    "outDir": "./out",
+    "target": "es2015",
+    "rootDir": "src",
+    "outDir": "out",
+    "sourceMap": true,
     "declaration": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "suppressImplicitAnyIndexErrors": true
   }
 }

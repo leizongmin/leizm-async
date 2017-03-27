@@ -1,6 +1,6 @@
 {
   "name": "lei-async",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "基于 async function 的异步库",
   "main": "out/index.js",
   "typings": "out/index.d.ts",
@@ -8,8 +8,9 @@
     "out"
   ],
   "scripts": {
-    "test": "mocha --harmony-async-await --timeout 5000",
-    "prepublish": "rm -rf out && tsc -p ."
+    "compile": "rm -rf out && tsc -p .",
+    "test": "npm run compile && mocha --harmony-async-await --timeout 5000",
+    "prepublish": "npm run compile"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.2.0",
+    "source-map-support": "^0.4.14",
     "typescript": "^2.1.6"
   }
 }
