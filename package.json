@@ -26,9 +26,9 @@
   },
   "homepage": "https://github.com/leizongmin/lei-async#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.2.0",
-    "source-map-support": "^0.4.14",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "source-map-support": "^0.5.0",
     "typescript": "^2.1.6"
   }
 }
