@@ -22,6 +22,8 @@
 
 
 # lei-async
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/leizongmin/lei-async.svg)](https://greenkeeper.io/)
 基于 async function 的数组相关操作异步库
 
 ## 安装
