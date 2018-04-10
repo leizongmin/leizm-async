@@ -33,7 +33,7 @@ npm install @leizm/async --save
 ## 使用方法
 
 ```typescript
-import * as async from "@leizm/async";
+import async from "@leizm/async";
 
 (async function() {
   // forEach
