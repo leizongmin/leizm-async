@@ -1,6 +1,6 @@
 {
   "name": "@leizm/async",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "基于 async function 的异步库",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -8,7 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "compile": "rm -rf dist && tsc -p .",
+    "compile": "rm -rf dist && tsc",
     "test": "mocha --require ts-node/register src/test.ts",
     "prepublish": "npm run compile"
   },
