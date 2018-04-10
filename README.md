@@ -32,7 +32,7 @@ npm install @leizm/async --save
 
 ## 使用方法
 
-```javascript
+```typescript
 import * as async from "@leizm/async";
 
 (async function() {
