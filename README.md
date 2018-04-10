@@ -6,45 +6,46 @@
 [![npm download][download-image]][download-url]
 [![npm license][license-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/lei-async.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/lei-async
-[travis-image]: https://img.shields.io/travis/leizongmin/lei-async.svg?style=flat-square
-[travis-url]: https://travis-ci.org/leizongmin/lei-async
-[coveralls-image]: https://img.shields.io/coveralls/leizongmin/lei-async.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/leizongmin/lei-async?branch=master
-[david-image]: https://img.shields.io/david/leizongmin/lei-async.svg?style=flat-square
-[david-url]: https://david-dm.org/leizongmin/lei-async
+[npm-image]: https://img.shields.io/npm/v/@leizm/async.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@leizm/async
+[travis-image]: https://img.shields.io/travis/leizongmin/@leizm/async.svg?style=flat-square
+[travis-url]: https://travis-ci.org/leizongmin/@leizm/async
+[coveralls-image]: https://img.shields.io/coveralls/leizongmin/@leizm/async.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/leizongmin/@leizm/async?branch=master
+[david-image]: https://img.shields.io/david/leizongmin/@leizm/async.svg?style=flat-square
+[david-url]: https://david-dm.org/leizongmin/@leizm/async
 [node-image]: https://img.shields.io/badge/node.js-%3E=_7.0-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
-[download-image]: https://img.shields.io/npm/dm/lei-async.svg?style=flat-square
-[download-url]: https://npmjs.org/package/lei-async
-[license-image]: https://img.shields.io/npm/l/lei-async.svg
+[download-image]: https://img.shields.io/npm/dm/@leizm/async.svg?style=flat-square
+[download-url]: https://npmjs.org/package/@leizm/async
+[license-image]: https://img.shields.io/npm/l/@leizm/async.svg
 
+# @leizm/async
 
-# lei-async
 基于 async function 的数组相关操作异步库
 
 ## 安装
 
 ```bash
-$ npm install lei-async --save
+npm install @leizm/async --save
 ```
 
 ## 使用方法
 
 ```javascript
-(async function () {
+import * as async from "@leizm/async";
 
+(async function() {
   // forEach
   {
-    await async.forEach([ 1, 3, 5, 7, 9 ], async function (item, index) {
+    await async.forEach([1, 3, 5, 7, 9], async function(item, index) {
       console.log(item, index);
     });
   }
 
   // map
   {
-    const list = await async.map([ 2, 4, 6, 8, 10 ], async function (item, index) {
+    const list = await async.map([2, 4, 6, 8, 10], async function(item, index) {
       return item + index;
     });
     console.log(list);
@@ -52,7 +53,7 @@ $ npm install lei-async --save
 
   // reduce
   {
-    const ret = await async.reduce([ 1, 3, 5, 7, 9 ], async function (a, b) {
+    const ret = await async.reduce([1, 3, 5, 7, 9], async function(a, b) {
       return a + b;
     });
     console.log(ret);
@@ -60,7 +61,7 @@ $ npm install lei-async --save
 
   // reduceRight
   {
-    const ret = await async.reduceRight([ 1, 3, 5, 7, 9 ], async function (a, b) {
+    const ret = await async.reduceRight([1, 3, 5, 7, 9], async function(a, b) {
       return a - b;
     });
     console.log(ret);
@@ -68,7 +69,7 @@ $ npm install lei-async --save
 
   // filter
   {
-    const list = await async.filter([ 1, 3, 5, 7, 9 ], async function (item) {
+    const list = await async.filter([1, 3, 5, 7, 9], async function(item) {
       return item > 5;
     });
     console.log(list);
@@ -76,7 +77,7 @@ $ npm install lei-async --save
 
   // every
   {
-    const ok = await async.every([ 2, 4, 6, 8, 10 ], async function (item) {
+    const ok = await async.every([2, 4, 6, 8, 10], async function(item) {
       return item % 2 === 0;
     });
     console.log(ok);
@@ -84,7 +85,7 @@ $ npm install lei-async --save
 
   // some
   {
-    const ok = await async.some([ 2, 4, 6, 8, 10 ], async function (item) {
+    const ok = await async.some([2, 4, 6, 8, 10], async function(item) {
       return item % 2 === 0;
     });
     console.log(ok);
@@ -92,7 +93,7 @@ $ npm install lei-async --save
 
   // find
   {
-    const ret = await async.find([ 1, 3, 5, 7, 9 ], async function (item) {
+    const ret = await async.find([1, 3, 5, 7, 9], async function(item) {
       return item > 5;
     });
     console.log(ret);
@@ -100,22 +101,20 @@ $ npm install lei-async --save
 
   // findIndex
   {
-    const ret = await async.findIndex([ 1, 3, 5, 7, 9 ], async function (item) {
+    const ret = await async.findIndex([1, 3, 5, 7, 9], async function(item) {
       return item > 5;
     });
     console.log(ret);
   }
-
 })();
 ```
 
-
 ## License
 
-```
+```text
 MIT License
 
-Copyright (c) 2017 Zongmin Lei <leizongmin@gmail.om>
+Copyright (c) 2017-2018 Zongmin Lei <leizongmin@gmail.om>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

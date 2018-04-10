@@ -1,5 +1,5 @@
 /**
- * lei-async tests
+ * @leizm/async tests
  *
  * @author Zongmin Lei <leizongmin@gmail.com>
  */
@@ -14,7 +14,7 @@ function sleep(num) {
   });
 }
 
-describe('test lei-async #1', function () {
+describe('test @leizm/async #1', function () {
 
   it('forEach', async function () {
     const items = [];
@@ -119,7 +119,7 @@ describe('test lei-async #1', function () {
 
 });
 
-describe('test lei-async #2', function () {
+describe('test @leizm/async #2', function () {
 
   it('forEach', async function () {
     const items = [];

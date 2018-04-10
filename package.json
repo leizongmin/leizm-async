@@ -1,20 +1,20 @@
 {
-  "name": "lei-async",
-  "version": "2.0.0",
+  "name": "@leizm/async",
+  "version": "1.0.0",
   "description": "基于 async function 的异步库",
-  "main": "out/index.js",
-  "typings": "out/index.d.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "files": [
-    "out"
+    "dist"
   ],
   "scripts": {
-    "compile": "rm -rf out && tsc -p .",
-    "test": "npm run compile && mocha --harmony-async-await --timeout 5000",
+    "compile": "rm -rf dist && tsc -p .",
+    "test": "npm run compile && mocha --timeout 5000",
     "prepublish": "npm run compile"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leizongmin/lei-async.git"
+    "url": "git+https://github.com/leizongmin/leizm-async.git"
   },
   "keywords": [
     "async"
@@ -22,13 +22,13 @@
   "author": "Zongmin Lei <leizongmin@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leizongmin/lei-async/issues"
+    "url": "https://github.com/leizongmin/leizm-async/issues"
   },
-  "homepage": "https://github.com/leizongmin/lei-async#readme",
+  "homepage": "https://github.com/leizongmin/leizm-async#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.2.0",
-    "source-map-support": "^0.4.14",
-    "typescript": "^2.1.6"
+    "chai": "^4.1.2",
+    "mocha": "^5.0.5",
+    "source-map-support": "^0.5.4",
+    "typescript": "^2.8.1"
   }
 }

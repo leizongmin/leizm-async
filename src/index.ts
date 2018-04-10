@@ -1,5 +1,5 @@
 /**
- * lei-async
+ * @leizm/async
  *
  * @author Zongmin Lei <leizongmin@gmail.com>
  */
